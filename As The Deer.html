@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As The Deer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="main">
+        <div id="titleBar">
+            <h1 id="name">As The Deer</h1>
+            <div id="keySet">
+                <h4>Key :&nbsp;</h4>
+                <h4 id="key" style="color: var(--chordColor);" data-scale=3></h4>
+            </div>
+            <div id="transposeButtons">
+                <button id="transposeDown" class="transposeBtn" onclick="transposeDown()">&#8595;</button>
+                <button id="sharpFlat" class="transposeBtn" onclick="sharpFlats()">#/&#9837;</button>
+                <button id="transposeUp" class="transposeBtn" onclick="transposeUp()">&#8593;</button>
+            </div>
+        </div>
+        <div id="song">
+            <div class="chords" style="grid-template-columns: repeat(12, 10px);">
+                <div class="chord" data-position="0" data-scale="3" data-min7="0">D</div>
+                <div class="chord" data-position="7" data-scale="10" data-min7="0" style="grid-column-start: 7;">A</div>
+                </div>
+                <div class="lyrics">As the deer
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(22, 10px);">
+                <div class="chord" data-position="8" data-scale="12" data-min7="6" style="grid-column-start: 8;">Bm</div>
+                <div class="chord" data-position="16" data-scale="3" data-min7="0" style="grid-column-start: 16;">D</div>
+                </div>
+                <div class="lyrics">Panteth for the water
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(30, 10px);">
+                <div class="chord" data-position="6" data-scale="8" data-min7="0" style="grid-column-start: 6;">G</div>
+                <div class="chord" data-position="21" data-scale="10" data-min7="0" style="grid-column-start: 21;">A</div>
+                <div class="chord" data-position="26" data-scale="3" data-min7="0" style="grid-column-start: 26;">D</div>
+                </div>
+                <div class="lyrics">So my soul longeth after Thee
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(32, 10px);">
+                <div class="chord" data-position="0" data-scale="3" data-min7="0">D</div>
+                <div class="chord" data-position="6" data-scale="10" data-min7="0" style="grid-column-start: 6;">A</div>
+                <div class="chord" data-position="17" data-scale="12" data-min7="6" style="grid-column-start: 17;">Bm</div>
+                <div class="chord" data-position="26" data-scale="3" data-min7="0" style="grid-column-start: 26;">D</div>
+                </div>
+                <div class="lyrics">You alone are my heart's desire
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(28, 10px);">
+                <div class="chord" data-position="8" data-scale="8" data-min7="0" style="grid-column-start: 8;">G</div>
+                <div class="chord" data-position="15" data-scale="10" data-min7="0" style="grid-column-start: 15;">A</div>
+                <div class="chord" data-position="24" data-scale="3" data-min7="0" style="grid-column-start: 24;">D</div>
+                </div>
+                <div class="lyrics">That I long to worship Thee
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(1, 10px);">
+                </div>
+                <div class="empty"></div><div class="chords" style="grid-template-columns: repeat(37, 10px);">
+                <div class="chord" data-position="0" data-scale="12" data-min7="6">Bm</div>
+                <div class="chord" data-position="16" data-scale="8" data-min7="0" style="grid-column-start: 16;">G</div>
+                <div class="chord" data-position="29" data-scale="3" data-min7="0" style="grid-column-start: 29;">D</div>
+                </div>
+                <div class="lyrics">You alone are my strength, my shield
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(33, 10px);">
+                <div class="chord" data-position="3" data-scale="8" data-min7="0" style="grid-column-start: 3;">G</div>
+                <div class="chord" data-position="8" data-scale="12" data-min7="6" style="grid-column-start: 8;">Bm</div>
+                <div class="chord" data-position="19" data-scale="5" data-min7="6" style="grid-column-start: 19;">Em</div>
+                <div class="chord" data-position="26" data-scale="7" data-min7="0" style="grid-column-start: 26;">G♭</div>
+                </div>
+                <div class="lyrics">To You alone may my spirit yield
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(32, 10px);">
+                <div class="chord" data-position="0" data-scale="3" data-min7="0">D</div>
+                <div class="chord" data-position="5" data-scale="10" data-min7="0" style="grid-column-start: 5;">A</div>
+                <div class="chord" data-position="17" data-scale="12" data-min7="6" style="grid-column-start: 17;">Bm</div>
+                <div class="chord" data-position="25" data-scale="3" data-min7="0" style="grid-column-start: 25;">D</div>
+                </div>
+                <div class="lyrics">You alone are my heart's desire
+                </div>
+                <div class="chords" style="grid-template-columns: repeat(27, 10px);">
+                <div class="chord" data-position="7" data-scale="8" data-min7="0" style="grid-column-start: 7;">G</div>
+                <div class="chord" data-position="14" data-scale="10" data-min7="0" style="grid-column-start: 14;">A</div>
+                <div class="chord" data-position="23" data-scale="3" data-min7="0" style="grid-column-start: 23;">D</div>
+                </div>
+                <div class="lyrics">And I long to worship Thee</div>
+        </div>
+        <div id="settings">
+            <div id="colour">
+                <button id="white" class="settings" style="background-color: white;" onclick="whiteTheme()"></button>
+                <button id="warm" class="settings" style="background-color: antiquewhite;" onclick="warmTheme()"></button>
+                <button id="black" class="settings" style="background-color: black;" onclick="darkTheme()"></button>
+            </div>
+            <div id="zoom">
+                <button id="zoomOut" class="settings" onclick="zoomOut()">Reduce</button>
+                <button id="zoomIn" class="settings" onclick="zoomIn()">Enlarge</button>
+            </div>
+            <div id="fonts">
+                <button id="aaa" class="settings" style="font-family: 'Times New Roman', Times, serif;" onclick="fontA()">ABC</button>
+                <button id="bbb" class="settings" style="font-family: Verdana, Geneva, Tahoma, sans-serif;" onclick="fontB()">ABC</button>
+                <button id="ccc" class="settings" style="font-family: cursive;" onclick="fontC()">ABC</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

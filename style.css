@@ -1,0 +1,109 @@
+:root {
+    --chordColor: darkblue;
+    --fontColor: black;
+    --backgroundColor: white;
+}
+
+body {
+    background-color: black;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
+    padding-top: 20px;
+    padding-bottom: 300px;
+    max-width: 100vmin;
+    position: relative;
+}
+
+#titleBar {
+    text-align: center;
+    margin-bottom: 3vh;
+    margin-top: 4vh;
+}
+
+#fonts {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+#zoom {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+#colour {
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+}
+
+#keySet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#song {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h4 {
+    margin: 0px;
+}
+
+button {
+    height: 20px;
+    min-width: 20px;
+}
+
+#transposeButtons {
+    margin-top: 1vmin;
+}
+
+.transposeBtn {
+    background-color: rgba(240, 240, 240, 0.027);
+    border: .3vmin solid rgba(73, 73, 73, 0.075);
+    border-top: .3vmin solid rgba(128, 128, 128, 0.075);
+    border-left: .3vmin solid rgba(128, 128, 128, 0.075);
+    color: rgba(0, 0, 0, 0.075);
+}
+
+.transposeBtn:hover {
+    background-color: rgba(240, 240, 240);
+    border: .3vmin solid rgba(73, 73, 73);
+    border-top: .3vmin solid rgba(128, 128, 128);
+    border-left: .3vmin solid rgba(128, 128, 128);
+    color: rgba(0, 0, 0);
+}
+
+.chords {
+    color: var(--chordColor);
+    margin: auto;
+    display: grid;
+    font-size: 20px;
+    height: 20px;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    padding-left: 4vw;
+    justify-content: center;
+}
+
+.lyrics {
+    text-align: center;
+    font-size: 24px;
+}
+
+.empty {
+    height: 30px;
+}
